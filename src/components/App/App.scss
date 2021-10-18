@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Sail";
+    src: url("../../fonts/Sail-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Swash";
+    src: url("../../fonts/berkshire-swash.regular.ttf");
+}
+
+:root {
+    --header-font: "Sail", sans-serif;
+    --main-font: "Swash", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--header-font);
+    font-size: 62.5%;
+}
+
+.container {
+    margin-top: 10rem;
+    padding: 3rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 4rem;
+}
