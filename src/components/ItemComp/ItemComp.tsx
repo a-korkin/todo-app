@@ -24,18 +24,17 @@ const ItemComp: React.FC<ItemProps> = ({item}) => {
     return (
         <div className="item">
             <div className="item__info">
+                <input 
+                    className="item__input"  
+                    onChange={e => checkHandler(e)}
+                    type="checkbox" 
+                    name={item.id} 
+                    id={item.id} 
+                    checked={item.done} 
+                />
                 <label className="item__label" htmlFor={item.id}>
-                    dd
-                    <input 
-                        className="item__input"  
-                        onChange={e => checkHandler(e)}
-                        type="checkbox" 
-                        name={item.id} 
-                        id={item.id} 
-                        checked={item.done} 
-                    />
+                    <span className="item__title">{item.title}</span>
                 </label>
-                <span className="item__title">{item.title}</span>
             </div>
             <button id={item.id} onClick={clickHandler} className="btn btn--danger">
                 Delete
