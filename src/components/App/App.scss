@@ -35,6 +35,10 @@ body {
     font-size: 4rem;
 }
 
+.filter {
+    margin-bottom: 1rem;
+}
+
 .btn {
     border: .1rem solid #000;
     border-radius: .3rem;
@@ -58,6 +62,12 @@ body {
 
     &--danger:hover {
         background-color: red;
+    }
+
+    &--filter {
+        &:not(:last-child) {
+            margin-right: .5rem;
+        }
     }
     
 }
