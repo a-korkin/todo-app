@@ -34,3 +34,30 @@ body {
     text-align: center;
     font-size: 4rem;
 }
+
+.btn {
+    border: .1rem solid #000;
+    border-radius: .3rem;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .1s ease;
+    background-color: #fff;
+    box-shadow: 0 .5rem .7rem #000;
+    font-weight: bold;
+    outline: none;
+    
+    &:active {
+        transform: translateY(.2rem);
+    }
+    
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+    &--danger:hover {
+        background-color: red;
+    }
+    
+}

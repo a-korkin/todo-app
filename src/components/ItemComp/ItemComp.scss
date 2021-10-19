@@ -1,0 +1,20 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__info {
+        margin-right: auto;
+    }
+
+    &__input {
+        margin-right: 2rem;
+    }
+
+    &__title {
+        text-transform: capitalize;
+    }
+}
